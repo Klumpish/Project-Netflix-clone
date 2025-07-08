@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './TitleCards.css';
+import { Link } from 'react-router-dom';
 // import cards_data from '../../assets/cards/Cards_data';
 
 const TitleCards = ({ title, category }) => {
@@ -45,7 +46,8 @@ const TitleCards = ({ title, category }) => {
 				className="card-list"
 				ref={cardsRef}>
 				{apiData.map((card, index) => (
-					<div
+					<Link
+						to={`/player/${card.id}`}
 						className="card"
 						key={index + card.original_title}>
 						<img
@@ -53,7 +55,7 @@ const TitleCards = ({ title, category }) => {
 							alt={'Image of movie ' + card.original_title}
 						/>
 						<p>{card.original_title}</p>
-					</div>
+					</Link>
 				))}
 			</div>
 		</div>
