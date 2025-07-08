@@ -21,3 +21,5 @@ npm create vite@latest
 - -> react router npm install react-router-dom add to main.jsx
 
 - -> getting api from themoviedb
+- -> installing and setting up firebase npm install firebase react-firebase-hooks
+- -> adding a notification with react-toastify `npm i react-toastify`
