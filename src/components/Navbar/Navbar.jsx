@@ -26,8 +26,8 @@ const Navbar = () => {
 				/>
 				<ul>
 					{/* spread out our nav items */}
-					{navItems.map((item) => (
-						<li>{item}</li>
+					{navItems.map((item, index) => (
+						<li key={index}>{item}</li>
 					))}
 				</ul>
 			</div>

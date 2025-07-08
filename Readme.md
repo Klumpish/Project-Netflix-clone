@@ -19,3 +19,5 @@ npm create vite@latest
 - -> google fonts -> Poppins -> get font copy import in to index.css then add font family 'poppins' in body
 
 - -> react router npm install react-router-dom add to main.jsx
+
+- -> getting api from themoviedb
